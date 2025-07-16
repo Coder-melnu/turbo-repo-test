@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { TRPCProvider } from "../trpc/client";
+
+import { NextAuthProvider } from "../nextauth/auth";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,13 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <TRPCProvider>
-      <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          {children}
-        </body>
-      </html>
+      <NextAuthProvider>
+        <html lang="en">
+          <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          >
+            {children}
+          </body>
+        </html>
+      </NextAuthProvider>
     </TRPCProvider>
   );
 }
