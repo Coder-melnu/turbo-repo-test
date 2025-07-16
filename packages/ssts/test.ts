@@ -1,0 +1,1 @@
+export const TEST_MY_NUMBER = 7;

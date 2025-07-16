@@ -1,6 +1,7 @@
 {
-  "name": "turbo-repo-test",
+  "name": "monoapp",
   "private": true,
+  "description": "",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
