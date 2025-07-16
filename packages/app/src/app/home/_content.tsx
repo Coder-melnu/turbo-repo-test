@@ -11,6 +11,7 @@ export const HomePage = (): React.JSX.Element => {
   if (!session) throw new Error("Session not found");
 
   void trpc.test.testQuery.useQuery();
+  void trpc.test.protecteTest.useQuery();
   const mutationTest = trpc.test.testMutation.useMutation();
   useEffect(() => {
     mutationTest.mutate();
