@@ -5,6 +5,7 @@ import { TEST_MY_NUMBER } from "@monoapp/test";
 import { trpc } from "../../trpc/client";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { captureException } from "@sentry/nextjs";
 
 export const HomePage = (): React.JSX.Element => {
   const { data: session } = useSession();
@@ -16,6 +17,7 @@ export const HomePage = (): React.JSX.Element => {
   const mutationTest = trpc.test.testMutation.useMutation();
   useEffect(() => {
     mutationTest.mutate();
+    captureException(new Error("This is Test Error"));
   }, []);
 
   return (
