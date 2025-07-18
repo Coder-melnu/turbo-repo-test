@@ -4,6 +4,7 @@ import type { Session } from "next-auth";
 export type { Session };
 export interface Context {
   session: maybe<Session>;
+  db: Awaited<ReturnType<typeof import("@monoapp/db").default>>;
 }
 
 const t = initTRPC.context<Context>().create();

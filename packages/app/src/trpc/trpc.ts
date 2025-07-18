@@ -1,4 +1,4 @@
-import type { AppRouter } from "@monoapp/trpc";
+import type { AppRouter } from "$/index";
 
 import { createTRPCReact } from "@trpc/react-query";
 

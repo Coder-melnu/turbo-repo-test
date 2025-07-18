@@ -1,5 +1,5 @@
 import { createTPRCRouter } from "./trpc";
-import { testRouter } from "./routes";
+import { testRouter } from "../routes";
 export const appRouter = createTPRCRouter({
   test: testRouter,
 });

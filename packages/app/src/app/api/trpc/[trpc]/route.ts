@@ -1,5 +1,5 @@
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
-import { appRouter } from "@monoapp/trpc";
+import { appRouter } from "$/";
 import { createContext } from "../../../../trpc/context";
 import "server-only";
 

@@ -1,8 +1,9 @@
-import type { Context } from "@monoapp/trpc";
+import type { Context } from "$/trpc";
+import connectDb from "@monoapp/db";
 
 import { getServerSession } from "../nextauth/auth";
 
 export const createContext = async (): Promise<Context> => {
-  const [session] = await Promise.all([getServerSession()]);
-  return { session };
+  const [session, db] = await Promise.all([getServerSession(), connectDb()]);
+  return { session, db };
 };
