@@ -55,6 +55,9 @@ importers:
       lucide-react:
         specifier: ^0.525.0
         version: 0.525.0(react@19.1.0)
+      maaybe:
+        specifier: ^1.0.0
+        version: 1.0.0
       mongoose:
         specifier: ^8.16.4
         version: 8.16.4
@@ -148,8 +151,8 @@ importers:
         specifier: ^11.4.3
         version: 11.4.3(typescript@5.8.3)
       maaybe:
-        specifier: ^0.1.3
-        version: 0.1.3
+        specifier: ^1.0.0
+        version: 1.0.0
       next-auth:
         specifier: 5.0.0-beta.25
         version: 5.0.0-beta.25(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
@@ -1625,8 +1628,8 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  maaybe@0.1.3:
-    resolution: {integrity: sha512-sbu5laZSnYUVtZ329JOAhuwnEJbFo3UxvUXPzH7mS3+W+JFfAe2G4AJUNdzZdYGKYnzClp5h3FNHPgkQHPvhRg==}
+  maaybe@1.0.0:
+    resolution: {integrity: sha512-9ico6HHCckJXdtflUdFuA4y80b+LMGDHSa+3yxE9K2bBn+UkeNkBWJh4XZEvdAzWx6WaL41jj2W9L/htOngZXQ==}
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -3773,7 +3776,7 @@ snapshots:
     dependencies:
       react: 19.1.0
 
-  maaybe@0.1.3: {}
+  maaybe@1.0.0: {}
 
   magic-string@0.30.17:
     dependencies:

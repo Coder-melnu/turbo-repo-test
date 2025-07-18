@@ -1,5 +1,6 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import type { Session } from "next-auth";
+import "maaybe";
 
 export type { Session };
 export interface Context {
